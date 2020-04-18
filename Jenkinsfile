@@ -5,7 +5,7 @@ node {
     }
     stage('Build and push Docker image') {
       sh(script: "docker login ${registry_url} -u ${acr_username} -p ${acr_password}", returnStdout: true)
-      sh(script: "docker build -t ${registry_url}/dockerwinaspnetcore:${BUILD_NUMBER} -f src/dockerwinaspnetcore/Dockerfile .", returnStdout: true)
+      sh(script: "docker build -t ${registry_url}/dockerwinaspnetcore:${BUILD_NUMBER} -f dockerwinaspnetcore/Dockerfile .", returnStdout: true)
       sh(script: "docker push ${registry_url}/dockerwinaspnetcore:${BUILD_NUMBER}", returnStdout: true)
     }
     stage('Unit Tests') {
