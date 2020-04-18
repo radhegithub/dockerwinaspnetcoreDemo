@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xrRJQkMeAIoZrCsq8EoTZ1PGauIH3gKpvhN8Pt63xRyseNxNu+lJXPlcYoyyTSNRNiz2ntEB3gbTj8zZLb8iUQ==",
+  "success": true,
+  "projectFilePath": "C:\\radhe\\dockerwinaspnetcore\\dockerwinaspnetcore\\dockerwinaspnetcore.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jenkinvm\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.8\\microsoft.visualstudio.azure.containers.tools.targets.1.10.8.nupkg.sha512"
+  ],
+  "logs": []
+}
