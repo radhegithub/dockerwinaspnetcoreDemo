@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: "aksjenkin"
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: "aksjenkin"
+    spec:
+      containers:
+        - name: "aksjenkin"
+          image: "jenkinacr.azurecr.io/aksjenkin"
+          ports:
+          - containerPort: 80
